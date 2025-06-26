@@ -68,3 +68,9 @@ variable "lgan_infr_id" {
   description = "Id de los log analitycs obtenidos desde el módulo environment. Ejemplo: snet_lgan_infr_id = module.environment.lgan_infr_ids"
   type        = map(string)
 }
+
+variable "legacy_mode" {
+  description = "Si es true, utiliza la configuración/nomenclatura antigua para mantener compatibilidad con recursos existentes."
+  type        = bool
+  default     = false
+}
